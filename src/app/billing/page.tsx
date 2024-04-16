@@ -1,12 +1,15 @@
 "use client";
 
 import { MouseEventHandler, useEffect, useState } from "react";
-import Link  from "next/link";
+import Link from "next/link";
 import { useModals } from "../components/useModal"
 import ShowOrderModal from "../components/show-order";
 // import { Book } from "./utils";
 
-const Billing = ({ selectedBook = [] }: { selectedBook: any }) => {
+const Billing = () => {
+  //@ts-ignore
+  const selectedBook = JSON.parse(localStorage.getItem('item'))
+  console.log(selectedBook)
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -159,10 +162,10 @@ const Billing = ({ selectedBook = [] }: { selectedBook: any }) => {
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
               <h4 className="text-[#161616] font-medium text-[16px] leading-5 upperc ase w-[350px]">
-                {selectedBook?.title}
+                {selectedBook?.name}
               </h4>
               <h4 className="text-[#161616] font-medium text-[16px]">
-                {selectedBook?.price}
+                ${selectedBook?.price}
               </h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
@@ -358,9 +361,8 @@ const Billing = ({ selectedBook = [] }: { selectedBook: any }) => {
             <button
               type="submit"
               disabled={isButtonDisabled}
-              className="text-base font-medium text-white bg-orange-500 rounded-md px-7 md:px-12 py-[15px] hover:bg-orange-600 w-full mt-[22px] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-orange-500"
               onClick={handleSubmit}
-            >
+              className={`group gap-[8px] mt-[30px] w-[100%] text-center text-[16px] sm:text-[24px] font-body bg-white text-[#2D714A] ${!isButtonDisabled && 'hover:bg-[#2D714A] hover:text-white'} px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-[#2D714A] transition-one`}>
               Place Order
             </button>
           </form>

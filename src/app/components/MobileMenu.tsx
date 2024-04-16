@@ -18,7 +18,7 @@ const MobileMenu = ({ setState }: MobileMenuProps) => {
                     setState(false)
                 }}>Home</p>
                 <p onClick={() => {
-                    router.push('/About')
+                    router.push('/about')
                     setState(false)
                 }}>
                     About Us
@@ -35,7 +35,7 @@ const MobileMenu = ({ setState }: MobileMenuProps) => {
                 }}>FAQs</p>
                 <p onClick={() => {
                     setState(false)
-                    router.push(`${path}#Contact`)
+                    router.push(`/contact`)
                 }}>Contact Us</p>
             </div>
         </div>

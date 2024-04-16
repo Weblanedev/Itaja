@@ -144,13 +144,12 @@ const Contact = () => {
                 onChange={handleMessageChange}
                 required
               ></textarea>
-
+              
               <button
                 type="submit"
-                className="text-base font-medium text-white bg-orange-500 rounded-md px-7 md:px-12 py-[15px] hover:bg-orange-600 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-orange-500"
-                onClick={toggleShowContactModal}
                 disabled={isButtonDisabled}
-              >
+                onClick={toggleShowContactModal}
+                className={`group gap-[8px] mt-[30px] w-[100%] text-center text-[16px] sm:text-[24px] font-body bg-white text-[#2D714A] ${!isButtonDisabled && 'hover:bg-[#2D714A] hover:text-white'} px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-[#2D714A] transition-one`}>
                 Submit
               </button>
             </form>
@@ -167,7 +166,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Call Us
               </h4>
-              <p className="text-orange-500 leading-[16px]">
+              <p className="text-[#1E4A31] leading-[16px]">
                 +234-818-197-0707
               </p>
             </div>
@@ -178,8 +177,8 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Mail Us
               </h4>
-              <p className="text-orange-500 leading-[16px]">
-              support@bronzetent.com
+              <p className="text-[#1E4A31] leading-[16px]">
+                support@bronzetent.com
               </p>
             </div>
           </div>
@@ -189,7 +188,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Address
               </h4>
-              <p className="text-orange-500 leading-normal">
+              <p className="text-[#1E4A31] leading-normal">
                 6, Samuel Manuwa Stree, Victoria Island, Lagos, Nigeira
               </p>
             </div>

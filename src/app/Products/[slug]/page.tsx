@@ -8,9 +8,20 @@ import useSWR from 'swr'
 import urlFor from '@/app/helpers/displaySanityImages'
 
 const SingleProductPage = (query: { params: { slug: any } }) => {
+    const router = useRouter()
     const ProductId = query?.params?.slug;
-    const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22Products%22%5D+%7B%0A++ProductUseSubText%2C%0A++++ProductSources%2C%0A++++ProductUses%2C%0A++++ProductName%2C%0A++++_id%2C%0A++++ProductIntro%2C%0A++++ProductDescription%2C%0A++++ProductCoverImage%2C%0A++++ProductDataSheet%2C%0A++++ProductImage%2C%0A++%22ProductDataSheet%22%3A+ProductDataSheet.asset-%3Eurl%0A%7D`
+    const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22Products%22%5D+%7B%0A++ProductUseSubText%2C%0A++++ProductSources%2C%0A++++ProductUses%2C%0A++++ProductName%2C%0A++++_id%2C%0A++++ProductIntro%2C%0A++++ProductDescription%2C%0A++++ProductCoverImage%2C%0A++++ProductToBuy%2C%0A++++ProductImage%2C%0A++%22ProductDataSheet%22%3A+ProductDataSheet.asset-%3Eurl%0A%7D`
     const { data } = useSWR(url, fetcher)
+
+    const purchase = (name: any, image: any, price: any) => {
+        const product = {
+            name,
+            price,
+            image,
+        }
+        localStorage.setItem("item", JSON.stringify(product))
+        router.push("/billing") 
+    }
     return (
         <div className='pb-[69px] pt-[100px] sm:pb-[98px] sm:pt-[110px]'>
             {
@@ -23,9 +34,6 @@ const SingleProductPage = (query: { params: { slug: any } }) => {
                                     <div className=''>
                                         <h1 className='text-[48px] sm:text-[96px] font-heading leading-normal'>{e?.ProductName}</h1>
                                         <p className='text-[16px] sm:text-[20px] font-body leading-normal w-[60%] mx-auto'>{e?.ProductIntro}</p>
-                                        <a href={e?.ProductDataSheet} target="_blank" download={e?.ProductName}>
-                                            <button className='px-[34px] mt-[40px] sm:px-[59px] rounded-[5px] py-[21px] w-[238px] sm:w-[490px] text-white bg-[#49D94F] text-[16px] sm:text-[24px] font-[700] flex justify-center font-body mx-auto'>DOWNLOAD DATASHEET</button>
-                                        </a>
                                     </div>
 
                                 </div>
@@ -68,6 +76,31 @@ const SingleProductPage = (query: { params: { slug: any } }) => {
                                         })}
                                     </div>
 
+                                </div>
+                            </div>
+
+                            <div className='container mx-auto px-[20px]'>
+                                <div className='flex flex-col sm:flex-row justify-between gap-[0px] sm:gap-[205px] items-center'>
+                                    <div className='text-[48px] sm:text-[64px] font-heading leading-normal w-[100%]' data-aos="fade-right">
+                                        <h1 className='text-[#EE821F]'>SHOP NOW</h1>
+                                        </div>
+                                </div>
+                                <div className='flex flex-col sm:flex-row gap-[53px] py-[30px]' data-aos="fade-up">
+                                    {e?.ProductToBuy.map((e: any, id: any) => {
+                                        return (
+                                            <div key={id}>
+                                                <Image src={urlFor(e.UseImage.asset._ref).url()} width={200} height={200} alt="" objectFit='contain' className="w-[100%] h-[250px] 2xl:h-[250px] object-cover group-hover:scale-[1.03] shadow-md" data-aos="fade-right" />
+                                                <div className='flex justify-between'>
+                                                    <h1 className='text-[20px] font-body font-[500] py-[15px]'>{e?.UseHeaderText}</h1>
+                                                    <p className='text-[16px] font-body py-[15px]'>${e?.UsePrice}
+                                                    </p>
+                                                </div>
+                                                <button className='group flex items-center gap-[8px] text-[16px] sm:text-[24px] font-body bg-white text-[#2D714A] hover:bg-[#2D714A] hover:text-white px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-[#2D714A] transition-one' onClick={() => purchase(e?.UseHeaderText, e.UseImage.asset._ref, e?.UsePrice)}>
+                                                    Purchase
+                                                </button>
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
 

@@ -97,7 +97,7 @@ export default function Home() {
             <div>
               <h1 className="text-[#1E4A31] group-hover:text-[#49D94F] font-heading text-[24px] font-[400] leading-normal">Contact Us</h1>
               <p className="text-[#696969] group-hover:text-white font-body text-[12px] font-[400] leading-normal">
-                Reach out to Bonbridge Farms Ltd today, Let{"'"}s chat about sustainable farming, partnerships, and more – we{"'"}re here to help!</p>
+                Reach out to Itaja Innovations Limited today, Let{"'"}s chat about sustainable farming, partnerships, and more – we{"'"}re here to help!</p>
             </div>
           </div>
           <div className="flex cursor-pointer gap-[30px] px-[28px] hover:bg-[#1E4A31] py-[30px] group" data-aos="zoom-in" onClick={() => { router.push(`${path}#Contact`) }}>
