@@ -78,7 +78,7 @@ const About = () => {
                     <h1 className='text-[40px]  text-center lg:text-start sm:text-[64px] xl:text-[72px] font-heading leading-normal pb-[20px]'><span className='text-[#EE821F]'>Our </span><span className='text-[#714E2D] uppercase'>Vision </span></h1>
                     <p className='text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal pt-[10px] text-justify'>Our vision is to be sustainably reliable and reliably sustainable while becoming a partner of choice for global agricultural supply chain solutions, emphasizing the West African subregion within the next decade. With a leadership team boasting over 30 years of hands-on experience in International Trade, Freight, and Logistics, our vision is to create a harmonious agricultural value chain that not only meets the diverse needs of our customers but also fosters economic growth and empowerment within the communities we serve. Itaja Innovations Limited Ltd aims to be a beacon of excellence, driving positive change in the agricultural sector and contributing significantly to Nigeria{"'"}s food security and economic development.</p></div>
                 <div className='w-[100%] px-[20px] sm:px-0' data-aos="fade-right">
-                    <Image src="/assets/whyItaja Innovations.png" width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[550px] 2xl:h-[750px] object-cover sm:px-0" />
+                    <Image src="/assets/whybonbridge.png" width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[550px] 2xl:h-[750px] object-cover sm:px-0" />
                 </div>
             </section>
 
