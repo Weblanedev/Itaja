@@ -10,7 +10,7 @@ import urlFor from '@/app/helpers/displaySanityImages'
 const SingleProductPage = (query: { params: { slug: any } }) => {
     const router = useRouter()
     const ProductId = query?.params?.slug;
-    const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22Products%22%5D+%7B%0A++ProductUseSubText%2C%0A++++ProductSources%2C%0A++++ProductUses%2C%0A++++ProductName%2C%0A++++_id%2C%0A++++ProductIntro%2C%0A++++ProductDescription%2C%0A++++ProductCoverImage%2C%0A++++ProductToBuy%2C%0A++++ProductImage%2C%0A++%22ProductDataSheet%22%3A+ProductDataSheet.asset-%3Eurl%0A%7D`
+    const url = `https://o7xh57k5.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22Products%22%5D+%7B%0A++ProductUseSubText%2C%0A++++ProductSources%2C%0A++++ProductUses%2C%0A++++ProductName%2C%0A++++_id%2C%0A++++ProductIntro%2C%0A++++ProductDescription%2C%0A++++ProductCoverImage%2C%0A++++ProductToBuy%2C%0A++++ProductImage%2C%0A++%22ProductDataSheet%22%3A+ProductDataSheet.asset-%3Eurl%0A%7D`
     const { data } = useSWR(url, fetcher)
 
     const purchase = (name: any, image: any, price: any) => {
