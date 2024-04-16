@@ -190,7 +190,7 @@ export default function Home() {
           </p>
         </div>
         <div className='w-[100%] px-[20px] sm:px-0' data-aos="fade-right">
-          <Image src="/assets/whyItaja Innovations.png" width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[550px] 2xl:h-[750px] object-cover sm:px-0" />
+          <Image src="/assets/whybonbridge.png" width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[550px] 2xl:h-[750px] object-cover sm:px-0" />
         </div>
         <div className='pt-[60px] flex sm:hidden justify-center '>
           <button className='group flex items-center gap-[8px] text-[16px] sm:text-[24px] font-body bg-white text-[#2D714A] hover:bg-[#2D714A] hover:text-white px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-[#2D714A] transition-one' onClick={() => { router.push("/About") }}>

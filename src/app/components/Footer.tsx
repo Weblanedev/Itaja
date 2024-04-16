@@ -51,6 +51,11 @@ const Footer = () => {
                     <h1 className='text-[20px] leading-normal pt-[20px] text-white w-[280px]'>Itaja Innovations Limited AND ALLIED INTEGRATED LIMITED</h1>
                 </div>
             </div>
+            <div className='container mx-auto px-[20px] sm:px-[60px] font-body flex flex-col lg:flex-row gap-[40px] pt-[20px]'>
+            <div className='flex items-center gap-[10px] text-white tet-[20px]'>
+            <p>Feed a community</p><img src='/assets/donate.jpg' alt="" className="w-36 pt-1 cursor-pointer" onClick={() => { router.push("/donation") }} />
+            </div>
+            </div>
         </section>
     )
 }
