@@ -86,7 +86,7 @@ const Contact = () => {
             <h2 className="text-[35px] font-medium">Schedule Meeting</h2>
             <p className="text-[16px] text-black leading-[28.8px] font-normal w-full text-center">
               We live to provide innovative solutions to problems like yours.
-              Let's talk.
+              Lets talk.
             </p>
           </div>
 

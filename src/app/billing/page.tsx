@@ -195,7 +195,7 @@ const Billing = () => {
           <form>
             <div className="flex flex-wrap gap-3 w-full">
               <label className="relative w-full flex flex-col">
-                <span className="font-bold mb-3">Card holder's name</span>
+                <span className="font-bold mb-3">Card holder{"'"}s name</span>
                 <input
                   className="rounded-md peer pl-12 pr-2 py-2 border-2 border-gray-200 placeholder-gray-300"
                   type="text"
