@@ -107,7 +107,7 @@ const Products = () => {
                 </div>
 
                 <div className='pt-[100px] flex flex-col gap-[40px] lg:hidden px-[20px]'>
-                    {data?.result?.map((e: any, id: React.Key | null | undefined) => {
+                {data?.result?.filter((e: any, id: number) => id < 3).map((e: any, id: React.Key | null | undefined) => {
                         return (
                             <div className='cursor-pointer relative group' key={id}>
                                 <Image src={urlFor(e.ProductImage.asset._ref).url()} width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[370px] object-cover" />

@@ -7,9 +7,11 @@ import ShowOrderModal from "../components/show-order";
 // import { Book } from "./utils";
 
 const Billing = () => {
-  //@ts-ignore
-  const selectedBook = JSON.parse(localStorage.getItem('item'))
-  console.log(selectedBook)
+  const [selectedItem, setSelectedItem] = useState({
+    name: "",
+    price: "",
+    image: ""
+  });
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -31,6 +33,13 @@ const Billing = () => {
 
     return output;
   }
+
+  useEffect(() => {
+    if(typeof localStorage !== 'undefined') {
+      const itemtobebought: any = localStorage.getItem("item")
+      setSelectedItem(JSON.parse(itemtobebought))
+    } 
+  })
 
   // State to manage the disabled state of the button
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
@@ -162,10 +171,10 @@ const Billing = () => {
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
               <h4 className="text-[#161616] font-medium text-[16px] leading-5 upperc ase w-[350px]">
-                {selectedBook?.name}
+                {selectedItem?.name}
               </h4>
               <h4 className="text-[#161616] font-medium text-[16px]">
-                ${selectedBook?.price}
+                ${selectedItem?.price}
               </h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
@@ -187,7 +196,7 @@ const Billing = () => {
             <div className="flex items-center justify-between py-[15px] w-full border-b">
               <h4 className="text-[#707070] font-medium text-[13px]">TOTAL</h4>
               <h4 className="text-[#a20401] font-medium text-[16px]">
-                {add100Dollars(selectedBook.price)}
+                {add100Dollars(selectedItem?.price)}
               </h4>
             </div>
           </div>
