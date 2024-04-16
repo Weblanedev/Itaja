@@ -15,7 +15,7 @@ import fetcher from '../helpers/fetcher'
 import { FaArrowRightLong } from 'react-icons/fa6'
 
 const Products = () => {
-    const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22Products%22%5D+%7B%0A++ProductName%2C%0A++++_id%2C%0A++++ProductCoverImage%2C%0A++++ProductDataSheet%2C%0A++++ProductImage%2C%0A++%22ProductDataSheet%22%3A+ProductDataSheet.asset-%3Eurl%0A%7D`
+    const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22Products%22%5D+%7B%0A++ProductName%2C%0A++++_id%2C%0A++++ProductCoverImage%2C%0A++++ProductDataSheet%2C%0A++++ProductType%2C%0A++++ProductImage%2C%0A++%22ProductDataSheet%22%3A+ProductDataSheet.asset-%3Eurl%0A%7D`
     const { data } = useSWR(url, fetcher)
     const router = useRouter()
     const path = usePathname()
@@ -89,8 +89,7 @@ const Products = () => {
                 <p className="text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal font-[400] w-[80%] lg:w-[60%] mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">From the rich flavors of dried Hibiscus leaves to the nutritional powerhouse of Sesame seeds, explore our carefully curated selection, showcasing the essence of eco-friendly farming. Discover the quality and freshness that sets Itaja Innovations Limited Ltd{"'"}s products apart.</p>
                 <div className='pt-[100px] hidden lg:flex flex-col items-center justify-center gap-[100px]'>
                     <div className='grid grid-cols-3 gap-[40px]'>
-                        {
-                            data?.result?.map((e: any, id: React.Key | null | undefined) => {
+                    {data?.result?.filter((e: any, id: number) => e.ProductType == "Itaja").map((e: any, id: React.Key | null | undefined) => {
                                 return (
                                     <div key={id} className='cursor-pointer relative group hover:scale-[1.03] transition-one'>
                                         <Image src={urlFor(e.ProductImage.asset._ref).url()} width={1500} height={500} alt="" objectFit='contain' className="w-[387px] h-[476px] 2xl:h-[476px] object-cover group-hover:scale-[1.03] shadow-md" data-aos="fade-right" />
@@ -107,7 +106,7 @@ const Products = () => {
                 </div>
 
                 <div className='pt-[100px] flex flex-col gap-[40px] lg:hidden px-[20px]'>
-                {data?.result?.filter((e: any, id: number) => id < 3).map((e: any, id: React.Key | null | undefined) => {
+                {data?.result?.filter((e: any, id: number) => e.ProductType == "Itaja").map((e: any, id: React.Key | null | undefined) => {
                         return (
                             <div className='cursor-pointer relative group' key={id}>
                                 <Image src={urlFor(e.ProductImage.asset._ref).url()} width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[370px] object-cover" />

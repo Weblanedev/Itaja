@@ -179,7 +179,7 @@ const Billing = () => {
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
               <h4 className="text-[#707070] uppercase font-medium text-[13px]">
-                Professional consultation service charge
+                Labor service charge
               </h4>
               <h4 className="text-[#161616] font-medium text-[16px]">
                 $100.00
