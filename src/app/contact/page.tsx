@@ -4,9 +4,6 @@
 import { useEffect, useState } from "react";
 import { useModals } from "../components/useModal";
 import ShowContactModal from "../components/show-contact";
-// import phoneIcon from "./assets/phone.png";
-// import mailIcon from "./assets/mail.png";
-// import locationIcon from "./assets/location.png";
 
 const Contact = () => {
   useEffect(() => {
@@ -78,7 +75,7 @@ const Contact = () => {
           <h1 className="font-medium md:font-semibold text-[50px] sm:text-[40px] md:text-[50px] md:text-left leading-snug md:leading-[62px] text-center text-orange-950">
             Contact Us
           </h1>
-          <p>Find the best way to get help and connect with Splashtop</p>
+          <p>Find the best way to get help and connect with Itaja Innovations</p>
         </div>
       </section>
 
@@ -144,7 +141,7 @@ const Contact = () => {
                 onChange={handleMessageChange}
                 required
               ></textarea>
-              
+
               <button
                 type="submit"
                 disabled={isButtonDisabled}
@@ -161,7 +158,7 @@ const Contact = () => {
             <h2 className="text-[35px] font-medium">Other ways to reach us:</h2>
           </div>
           <div className="flex gap-5 items-start justify-center">
-            {/* <img src={phoneIcon} alt="" className="w-6 pt-1" /> */}
+            <img src='/assets/phone.png' alt="" className="w-6 pt-1" />
             <div className="flex flex-col items-start justify-center gap-3">
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Call Us
@@ -172,7 +169,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex gap-5 items-start justify-center">
-            {/* <img src={mailIcon} alt="" className="w-6 pt-1" /> */}
+            <img src='assets/mail.png' alt="" className="w-6 pt-1" />
             <div className="flex flex-col items-start justify-center gap-3">
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Mail Us
@@ -183,7 +180,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex gap-5 items-start justify-center">
-            {/* <img src={locationIcon} alt="" className="w-6 pt-1" /> */}
+            <img src='assets/location.png' alt="" className="w-6 pt-1" />
             <div className="flex flex-col items-start justify-center gap-3">
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Address

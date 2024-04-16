@@ -85,7 +85,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-[#1E4A31] group-hover:text-[#49D94F] font-heading text-[24px] font-[400] leading-normal">REQUEST A QUOTE</h1>
-              <p className="text-[#696969] group-hover:text-white font-body text-[12px] font-[400] leading-normal">Ready to grow together? Contact us, and let{"'"}s kickstart your agricultural journey with Bonbridge Farms Ltd.</p>
+              <p className="text-[#696969] group-hover:text-white font-body text-[12px] font-[400] leading-normal">Ready to grow together? Contact us, and let{"'"}s kickstart your agricultural journey with Itaja Innovations Limited Ltd.</p>
             </div>
           </div>
           <div className="flex cursor-pointer gap-[30px] px-[28px] hover:bg-[#1E4A31] py-[30px] group" data-aos="zoom-in" onClick={() => { router.push(`${path}#Contact`) }}>
@@ -167,9 +167,9 @@ export default function Home() {
         <div className='w-[100%] px-[20px] sm:pl-[20px] xl:pl-[80px] 2xl:pl-[127px]' data-aos="fade-right">
           <h1 className='text-[40px]  text-center lg:text-start sm:text-[64px] lg:text-[72px] font-heading leading-normal pb-[20px]'><span className='text-[#EE821F]'>WHO </span><span className='text-[#714E2D]'>ARE WE?</span></h1>
           <p className='text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal text-justify'>
-            Bonbridge Farms Ltd is a distinguished Indigenous Nigerian Agro-Allied Company cultivated from a wealth of Agriculture, Freight, and Logistics expertise. Our journey encompasses various agricultural domains, including Poultry Farming, Aquaculture, Piggeries, and Vegetable Farming. With a seasoned management team boasting over 30 years of hands-on experience, we bring a unique blend of proficiency to the dynamic agro-allied landscape.
+          Itaja Innovations Limited is a distinguished Indigenous Nigerian Agro-Allied Company cultivated from a wealth of Agriculture, Freight, and Logistics expertise. Our journey encompasses various agricultural domains, including Poultry Farming, Aquaculture, Piggeries, and Vegetable Farming. With a seasoned management team boasting over 30 years of hands-on experience, we bring a unique blend of proficiency to the dynamic agro-allied landscape.
             We are more than just a company; we are passionate stewards of sustainable agricultural practices, unwavering champions of innovation, and dedicated contributors to Nigeria{"'"}s economic development.
-            At Bonbridge Farms Ltd, our identity is forged by a steadfast commitment to excellence, a customer-centric ethos, and a visionary pursuit of leading Nigeria{"'"}s agricultural value chain. Join us on this exciting journey of growth and sustainability!
+            At Itaja Innovations Limited, our identity is forged by a steadfast commitment to excellence, a customer-centric ethos, and a visionary pursuit of leading Nigeria{"'"}s agricultural value chain. Join us on this exciting journey of growth and sustainability!
           </p>
         </div>
         <div className='w-[100%] px-[20px] sm:px-0' data-aos="fade-left">
@@ -184,13 +184,13 @@ export default function Home() {
 
       <section className='pt-[50px] sm:pt-[100px] mt-[50px] sm:mt-[100px] flex flex-col lg:flex-row-reverse gap-[40px] xl:gap-[100px] items-center overflow-hidden'>
         <div className='w-[100%] px-[20px] sm:pr-[20px] xl:pr-[80px] 2xl:pr-[127px]' data-aos="fade-left">
-          <h1 className='text-[40px]  text-center lg:text-start sm:text-[64px] xl:text-[72px] font-heading leading-normal pb-[20px]'><span className='text-[#EE821F]'>WHY </span><span className='text-[#714E2D] uppercase'>Bonbridge farms </span></h1>
+          <h1 className='text-[40px]  text-center lg:text-start sm:text-[64px] xl:text-[72px] font-heading leading-normal pb-[20px]'><span className='text-[#EE821F]'>WHY </span><span className='text-[#714E2D] uppercase'>Itaja Innovations </span></h1>
           <p className='text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal pt-[10px] text-justify'>
-            We are a prominent Indigenous Nigerian Agro-Allied Company with over 30 years of hands-on experience in Agriculture, Freight, and Logistics, is a leader in Poultry Farming, Aquaculture, Piggeries, and Vegetable Farming. Distinguished by its commitment to fairtrade practices, sustainability, and innovation, the company aims to be a trailblazer in Nigeria{"'"}s agricultural value chain. Beyond being a company, we see ourselves as stewards of sustainable agricultural practices, strategically focusing on excellence, customer satisfaction, and environmental stewardship. Through a diversified portfolio and a vision to reshape the agricultural landscape, Bonbridge Farms strives to provide high-quality products and services that positively impact the communities it serves, making it the ideal partner for those dedicated to excellence and positive change in Nigeria{"'"}s agro-allied industry.
+            We are a prominent Indigenous Nigerian Agro-Allied Company with over 30 years of hands-on experience in Agriculture, Freight, and Logistics, is a leader in Poultry Farming, Aquaculture, Piggeries, and Vegetable Farming. Distinguished by its commitment to fairtrade practices, sustainability, and innovation, the company aims to be a trailblazer in Nigeria{"'"}s agricultural value chain. Beyond being a company, we see ourselves as stewards of sustainable agricultural practices, strategically focusing on excellence, customer satisfaction, and environmental stewardship. Through a diversified portfolio and a vision to reshape the agricultural landscape, Itaja Innovations Limited strives to provide high-quality products and services that positively impact the communities it serves, making it the ideal partner for those dedicated to excellence and positive change in Nigeria{"'"}s agro-allied industry.
           </p>
         </div>
         <div className='w-[100%] px-[20px] sm:px-0' data-aos="fade-right">
-          <Image src="/assets/whybonbridge.png" width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[550px] 2xl:h-[750px] object-cover sm:px-0" />
+          <Image src="/assets/whyItaja Innovations.png" width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[550px] 2xl:h-[750px] object-cover sm:px-0" />
         </div>
         <div className='pt-[60px] flex sm:hidden justify-center '>
           <button className='group flex items-center gap-[8px] text-[16px] sm:text-[24px] font-body bg-white text-[#2D714A] hover:bg-[#2D714A] hover:text-white px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-[#2D714A] transition-one' onClick={() => { router.push("/About") }}>
@@ -205,7 +205,7 @@ export default function Home() {
           <span className="text-[#714E2D]">WHAT OUR</span>{" "}
           <span className="text-[#EE821F]">CLIENTS SAY</span>
         </h1>
-        <p className="text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal font-[400] w-[80%] lg:w-[40%] mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">Discover the stories that define us. Explore what our valued clients say about their Bonbridge Farms experience. Share your review and join our growing community of satisfied customers.
+        <p className="text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal font-[400] w-[80%] lg:w-[40%] mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">Discover the stories that define us. Explore what our valued clients say about their Itaja Innovations experience. Share your review and join our growing community of satisfied customers.
         </p>
         <div className='pt-[50px] sm:pt-[100px] block lg:hidden'>
           <Swiper
@@ -228,7 +228,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Emeka Nwosu</h1>
-                  <p className='text-[#696969] text-[19px]'>I am incredibly pleased with my experience with Bonbridge Farms, the dedication and passion that goes into every aspect of their operation.</p>
+                  <p className='text-[#696969] text-[19px]'>I am incredibly pleased with my experience with Itaja Innovations Limited, the dedication and passion that goes into every aspect of their operation.</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -239,7 +239,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Adeoluwa Balogun</h1>
-                  <p className='text-[#696969] text-[19px]'>Bonbridge Farms is a gem in the world of farming. The care and attention they put into their operation are truly remarkable. From the lush fields to the impeccable packaging, every detail is considered.</p>
+                  <p className='text-[#696969] text-[19px]'>Itaja Innovations Limited is a gem in the world of farming. The care and attention they put into their operation are truly remarkable. From the lush fields to the impeccable packaging, every detail is considered.</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -250,7 +250,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Ngozi Adeyemi</h1>
-                  <p className='text-[#696969] text-[19px]'>Working with Bonbridge Farms has been a delight. Their team{"'"}s dedication to providing top-notch products and services is evident in every interaction. I highly recommend Bonbridge Farms to anyone who values excellence and integrity in agriculture.</p>
+                  <p className='text-[#696969] text-[19px]'>Working with Itaja Innovations Limited has been a delight. Their team{"'"}s dedication to providing top-notch products and services is evident in every interaction. I highly recommend Itaja Innovations Limited to anyone who values excellence and integrity in agriculture.</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -261,7 +261,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Funmilayo Olumide,</h1>
-                  <p className='text-[#696969] text-[19px]'>I can{"'"}t express how impressed I am with Bonbridge Farms. Their dedication to providing the best possible products while maintaining a focus on environmental sustainability is truly admirable.</p>
+                  <p className='text-[#696969] text-[19px]'>I can{"'"}t express how impressed I am with Itaja Innovations Limited. Their dedication to providing the best possible products while maintaining a focus on environmental sustainability is truly admirable.</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -272,14 +272,14 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Chijioke Eze</h1>
-                  <p className='text-[#696969] text-[19px]'>The flavors of their produce are a testament to the care and passion that go into every step of their farming process. Bonbridge Farms has set a new standard for excellence in agriculture.</p>
+                  <p className='text-[#696969] text-[19px]'>The flavors of their produce are a testament to the care and passion that go into every step of their farming process. Itaja Innovations Limited has set a new standard for excellence in agriculture.</p>
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
 
-        <div className='pt-[50px] sm:pt-[100px] hidden lg:block'>
+        <div className='pt-[50px] sm:pt-[100px] hidden lg:block pb-[30px]'>
           <Swiper
             slidesPerView={3}
             spaceBetween={35}
@@ -300,7 +300,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Emeka Nwosu</h1>
-                  <p className='text-[#696969] text-[19px]'>I am incredibly pleased with my experience with Bonbridge Farms, the dedication and passion that goes into every aspect of their operation.</p>
+                  <p className='text-[#696969] text-[19px]'>I am incredibly pleased with my experience with Itaja Innovations Limited, the dedication and passion that goes into every aspect of their operation.</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -311,7 +311,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Adeoluwa Balogun</h1>
-                  <p className='text-[#696969] text-[19px]'>Bonbridge Farms is a gem in the world of farming. The care and attention they put into their operation are truly remarkable. From the lush fields to the impeccable packaging, every detail is considered.</p>
+                  <p className='text-[#696969] text-[19px]'>Itaja Innovations Limited is a gem in the world of farming. The care and attention they put into their operation are truly remarkable. From the lush fields to the impeccable packaging, every detail is considered.</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -322,7 +322,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Ngozi Adeyemi</h1>
-                  <p className='text-[#696969] text-[19px]'>Working with Bonbridge Farms has been a delight. Their team{"'"}s dedication to providing top-notch products and services is evident in every interaction. I highly recommend Bonbridge Farms to anyone who values excellence and integrity in agriculture.</p>
+                  <p className='text-[#696969] text-[19px]'>Working with Itaja Innovations Limited has been a delight. Their team{"'"}s dedication to providing top-notch products and services is evident in every interaction. I highly recommend Itaja Innovations Limited to anyone who values excellence and integrity in agriculture.</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -333,7 +333,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Funmilayo Olumide,</h1>
-                  <p className='text-[#696969] text-[19px]'>I can{"'"}t express how impressed I am with Bonbridge Farms. Their dedication to providing the best possible products while maintaining a focus on environmental sustainability is truly admirable.</p>
+                  <p className='text-[#696969] text-[19px]'>I can{"'"}t express how impressed I am with Itaja Innovations Limited. Their dedication to providing the best possible products while maintaining a focus on environmental sustainability is truly admirable.</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -344,7 +344,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Chijioke Eze</h1>
-                  <p className='text-[#696969] text-[19px]'>The flavors of their produce are a testament to the care and passion that go into every step of their farming process. Bonbridge Farms has set a new standard for excellence in agriculture.</p>
+                  <p className='text-[#696969] text-[19px]'>The flavors of their produce are a testament to the care and passion that go into every step of their farming process. Itaja Innovations Limited has set a new standard for excellence in agriculture.</p>
                 </div>
               </div>
             </SwiperSlide>

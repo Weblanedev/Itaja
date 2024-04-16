@@ -86,7 +86,7 @@ const Products = () => {
                     <span className="text-[#714E2D]">OUR</span>{" "}
                     <span className="text-[#EE821F]">PRODUCTS</span>
                 </h1>
-                <p className="text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal font-[400] w-[80%] lg:w-[60%] mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">From the rich flavors of dried Hibiscus leaves to the nutritional powerhouse of Sesame seeds, explore our carefully curated selection, showcasing the essence of eco-friendly farming. Discover the quality and freshness that sets Bonbridge Farms Ltd{"'"}s products apart.</p>
+                <p className="text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal font-[400] w-[80%] lg:w-[60%] mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">From the rich flavors of dried Hibiscus leaves to the nutritional powerhouse of Sesame seeds, explore our carefully curated selection, showcasing the essence of eco-friendly farming. Discover the quality and freshness that sets Itaja Innovations Limited Ltd{"'"}s products apart.</p>
                 <div className='pt-[100px] hidden lg:flex flex-col items-center justify-center gap-[100px]'>
                     <div className='grid grid-cols-3 gap-[40px]'>
                         {
@@ -130,7 +130,7 @@ const Products = () => {
                     </div>
                     <p className='text-[#696969] -translate-y-[40px] font-body text-[16px] sm:text-[20px] leading-normal pt-[10px] text-justify'>Experience the convenience of timely and reliable deliveries to your doorstep, no matter where you are. From the heart of our warehouse to destinations across the globe, we ensure your packages reach you with precision and care.</p>
                     <div className='pt-[40px] -translate-y-[40px] flex justify-center sm:justify-start'>
-                        <button className='group flex items-center gap-[8px] text-[16px] sm:text-[24px] font-body bg-white text-[#2D714A] hover:bg-[#2D714A] hover:text-white px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-[#2D714A] transition-one' onClick={() => { router.push(`${path}#Contact`) }}>
+                        <button className='group flex items-center gap-[8px] text-[16px] sm:text-[24px] font-body bg-white text-[#2D714A] hover:bg-[#2D714A] hover:text-white px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-[#2D714A] transition-one' onClick={() => { router.push(`/contact`) }}>
                             CONTACT US <FaArrowRightLong className="rotate-[-45deg] group-hover:rotate-[0] transition-one" />
                         </button>
                     </div>
