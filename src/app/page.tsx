@@ -15,7 +15,7 @@ import fetcher from './helpers/fetcher';
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState<boolean>(false)
-  const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22Products%22%5D+%7B%0A++ProductName%2C%0A++++_id%2C%0A++++ProductCoverImage%2C%0A++++ProductDataSheet%2C%0A++++ProductImage%2C%0A++%22ProductDataSheet%22%3A+ProductDataSheet.asset-%3Eurl%0A%7D`
+  const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22Products%22%5D+%7B%0A++ProductName%2C%0A++++_id%2C%0A++++ProductCoverImage%2C%0A++++ProductDataSheet%2C%0A++++ProductType%2C%0A++++ProductImage%2C%0A++%22ProductDataSheet%22%3A+ProductDataSheet.asset-%3Eurl%0A%7D`
   const { data } = useSWR(url, fetcher)
   const router = useRouter()
   const path = usePathname()
@@ -125,8 +125,7 @@ export default function Home() {
         <p className="text-[#696969] font-body text-[16px] sm:text-[20px] leading-normal font-[400] w-[80%] lg:w-[40%] mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">Our commitment to quality, freshness, and ethical farming sets us apart as your go-to source for premium agricultural products.</p>
         <div className='pt-[100px] hidden lg:flex'>
           <div className='flex gap-[40px] xl:gap-[75px]'>
-            {
-              data?.result?.filter((e: any, id: number) => id < 3).map((e: any, id: React.Key | null | undefined) => {
+          {data?.result?.filter((e: any, id: number) => e.ProductType == "Itaja").map((e: any, id: React.Key | null | undefined) => {
                 return (
                   <div key={id} className='cursor-pointer relative group hover:scale-[1.03] transition-one'>
                     <Image src={urlFor(e.ProductImage.asset._ref).url()} width={1500} height={500} alt="" objectFit='contain' className="w-[100%] h-[550px] 2xl:h-[750px] object-cover group-hover:scale-[1.03] shadow-md" data-aos="fade-right" />
@@ -296,7 +295,7 @@ export default function Home() {
             <SwiperSlide className=''>
               <div className='flex items-center px-[30px] py-[56px] gap-[20px]'>
                 <div className='w-[100%]'>
-                  <Image src="/assets/clientsSay.png" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
+                  <Image src="https://th.bing.com/th/id/R.6db259ae60673c00bbf742dde69a0afa?rik=hk%2fr2YdKfZZchg&pid=ImgRaw&r=0" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Emeka Nwosu</h1>
@@ -307,7 +306,7 @@ export default function Home() {
             <SwiperSlide className=''>
               <div className='flex items-center px-[30px] py-[56px] gap-[20px]'>
                 <div className='w-[100%]'>
-                  <Image src="/assets/clientsSay.png" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
+                  <Image src="https://th.bing.com/th/id/R.6db259ae60673c00bbf742dde69a0afa?rik=hk%2fr2YdKfZZchg&pid=ImgRaw&r=0" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Adeoluwa Balogun</h1>
@@ -318,7 +317,7 @@ export default function Home() {
             <SwiperSlide className=''>
               <div className='flex items-center px-[30px] py-[56px] gap-[20px]'>
                 <div className='w-[100%]'>
-                  <Image src="/assets/clientsSay.png" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
+                  <Image src="https://th.bing.com/th/id/R.6db259ae60673c00bbf742dde69a0afa?rik=hk%2fr2YdKfZZchg&pid=ImgRaw&r=0" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Ngozi Adeyemi</h1>
@@ -329,7 +328,7 @@ export default function Home() {
             <SwiperSlide className=''>
               <div className='flex items-center px-[30px] py-[56px] gap-[20px]'>
                 <div className='w-[100%]'>
-                  <Image src="/assets/clientsSay.png" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
+                  <Image src="https://th.bing.com/th/id/R.6db259ae60673c00bbf742dde69a0afa?rik=hk%2fr2YdKfZZchg&pid=ImgRaw&r=0" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Funmilayo Olumide,</h1>
@@ -340,7 +339,7 @@ export default function Home() {
             <SwiperSlide className=''>
               <div className='flex items-center px-[30px] py-[56px] gap-[20px]'>
                 <div className='w-[100%]'>
-                  <Image src="/assets/clientsSay.png" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
+                  <Image src="https://th.bing.com/th/id/R.6db259ae60673c00bbf742dde69a0afa?rik=hk%2fr2YdKfZZchg&pid=ImgRaw&r=0" width={100} height={100} alt="" objectFit='contain' className="w-[100px] rounded-[50%] h-[100pxpx] object-cover" />
                 </div>
                 <div>
                   <h1 className='text-[#49d94F] font-body text-[24px]'>Chijioke Eze</h1>

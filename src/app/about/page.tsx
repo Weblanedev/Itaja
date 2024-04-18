@@ -52,8 +52,8 @@ const About = () => {
                                         <path d={e.path} fill="#49D94F" />
                                     </svg>
                                     <h1 className='text-[20px] font-body font-[500] py-[15px]'>{e.header}</h1>
-                                    <p className='text-[16px] font-body'>Call us on 08056518383 to speak directly with our dedicated team. We are ready to guide you through the steps to become a Max Lotto agent and answer any questions you may have.
-                                    </p>
+                                    {/* <p className='text-[16px] font-body'>Call us on 09092439804 to speak directly with our dedicated team. We are ready to guide you through the steps to become a Max Lotto agent and answer any questions you may have.
+                                    </p> */}
                                 </div>
                             )
                         })}
@@ -115,8 +115,8 @@ const About = () => {
                                         <path d={e.path} fill="#EE821F" />
                                     </svg>
                                     <h1 className='text-[20px] font-body font-[500] py-[15px]'>{e.header}</h1>
-                                    <p className='text-[16px] font-body'>Call us on 08056518383 to speak directly with our dedicated team. We are ready to guide you through the steps to become a Max Lotto agent and answer any questions you may have.
-                                    </p>
+                                    {/* <p className='text-[16px] font-body'>Call us on 09092439804 to speak directly with our dedicated team. We are ready to guide you through the steps to become a Max Lotto agent and answer any questions you may have.
+                                    </p> */}
                                 </div>
                             )
                         })}

@@ -28,22 +28,18 @@ const Footer = () => {
                     <h1 className='text-[#49D94F] leading-normal'>Product</h1>
                     <div className='text-white flex flex-col gap-[20px]'>
                         <p className='cursor-pointer' onClick={() => { router.push(`/contact`) }}>Request a Quote</p>
-                        <p className='cursor-pointer' onClick={() => { router.push(`/contact`) }}>Contact Us</p>
                         <p className='cursor-pointer' onClick={() => { router.push("/Products") }}>Market Information</p>
                     </div>
                 </div>
                 <div className='w-[100%] lg:text-right text-[20px]'>
-                    <div>
-                        <h1 className='text-[#49D94F] leading-normal'>Address 1</h1>
-                        <p className='text-white'>OZOEBUBECHUKWU COMPOUND, AGBANA VILLAGE, AWKA-SOUTH</p>
-                    </div>
+                    
                     <div className='py-[20px]'>
                         <h1 className='text-[#49D94F] leading-normal'>Operating Address</h1>
-                        <p className='text-white'>6 ONITANA STREET, OFF MOBOLAJI JOHNSON, IKOYI, LAGOS</p>
+                        <p className='text-white'>LAGOS, NIGERIA</p>
                     </div>
                     <div>
                         <h1 className='text-[#49D94F] leading-normal'>Email</h1>
-                        <p className='text-white'>info@Itaja Innovationsfarms.com</p>
+                        <p className='text-white'>support@itaja4u.com</p>
                     </div>
                 </div>
                 <div className='w-[100%] block sm:hidden'>

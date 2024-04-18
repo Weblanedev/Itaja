@@ -164,7 +164,7 @@ const Contact = () => {
                 Call Us
               </h4>
               <p className="text-[#1E4A31] leading-[16px]">
-                +234-818-197-0707
+                +234-909-243-9804
               </p>
             </div>
           </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                 Mail Us
               </h4>
               <p className="text-[#1E4A31] leading-[16px]">
-                support@bronzetent.com
+                support@itaja4u.com
               </p>
             </div>
           </div>
@@ -186,7 +186,7 @@ const Contact = () => {
                 Address
               </h4>
               <p className="text-[#1E4A31] leading-normal">
-                6, Samuel Manuwa Stree, Victoria Island, Lagos, Nigeira
+                Lagos, Nigeira
               </p>
             </div>
           </div>
