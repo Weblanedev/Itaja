@@ -186,7 +186,7 @@ const Contact = () => {
                 Address
               </h4>
               <p className="text-[#1E4A31] leading-normal">
-                14 Tom Ogboi Avenue, Itedo Estate, Lekki
+                RS2, Unit 3, Lekki Horizon Court, Elegushi Crescent, Lekki
               </p>
             </div>
           </div>
