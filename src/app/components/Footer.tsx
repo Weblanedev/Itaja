@@ -35,7 +35,7 @@ const Footer = () => {
                     
                     <div className='py-[20px]'>
                         <h1 className='text-[#49D94F] leading-normal'>Operating Address</h1>
-                        <p className='text-white'>LAGOS, NIGERIA</p>
+                        <p className='text-white'>14 Tom Ogboi Avenue, Itedo Estate, Lekki</p>
                     </div>
                     <div>
                         <h1 className='text-[#49D94F] leading-normal'>Email</h1>
